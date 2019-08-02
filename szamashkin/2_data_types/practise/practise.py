@@ -20,7 +20,7 @@ variable = str(price + str(10))
 phone_number = input("Your phone_number is: ")
 variable = str(price + str(10))
 # added user phone number
-print (price)
+print("price")
 
 
 
