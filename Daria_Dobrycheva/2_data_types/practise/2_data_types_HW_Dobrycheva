@@ -1,0 +1,37 @@
+car = 2000
+
+my_inpyt = input('Brand : ')                       # Create input message
+price_plus = car + 10
+print(price_plus)
+
+my_inpyt1 = input('Model : ')                       # Create input message
+price_plus1 = price_plus + 10
+print(price_plus1)
+
+my_inpyt2 = input('Color : ')                    # Create input message
+price_plus2 = price_plus1 + 10
+print(price_plus2)
+
+my_inpyt3 = input('Year : ')                           # Create input message
+price_plus3 = price_plus2 + 10
+print(price_plus3)
+
+my_inpyt4 = input('Engine volume : ')                      # Create input message
+price_plus4 = price_plus3 + 10
+print(price_plus4)
+
+my_inpyt5 = input('Odometer : ')                    # Create input message
+price_plus5 = price_plus4 + 10
+print(price_plus5)
+
+my_inpyt6 = input('Phone number : ')                           # Create input message
+price_plus6 = price_plus5 + 10
+print(price_plus6)
+
+new_price = price_plus6 + 10
+
+print(new_price)
+
+price_chenge = (new_price + 10) / 100
+
+print(price_chenge)
