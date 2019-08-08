@@ -31,55 +31,41 @@ if a in brand and b in color:
 if a not in brand and b not in color:
     print("My favourite car is:" + str(b + a))
 rating += 1
-#print("My favourite is: Black Audi")
+print("My favourite is: Black Audi")
 
 #####Try to change year type to int and catch exception, else print year and finally decrease year by 1 and print
+
 try:
     print(int(year) - int("1"))
-except ValueError:
-    print("Error-year " + str(year) + " do not exist")
+except ValueError as error:
+    print("Error-invalid year")
 
 engine_volume = input("Your car engine_volume is: ")
 rating += 1
 
 #####Change Engine volume type to float and add 0.1 to value (print to user), (use try, except, else)
 try:
-    print(float(engine_volume))
-except ValueError:
+    engine_volume = (float(engine_volume))
+except ValueError as error:
     print("Incorrect")
 else:
     print(float(engine_volume) + float(0.1))
 print("End of program")
 rating += 1
 
-"""Change odometer type to int check that odometer value less than 1000,greater than 50000, greater or equal to 100000 and  
-set different value for rating"""
+######odometer#####
 
-"""odometer = input("Your car odometer info is: ")
-i = 1000; o = 50000; p = 100000
+x = input("Your car odometer info is: ")
 try:
-    print(int(odometer))
-except ValueError:
-    print("Incorrect")
-if i >= int(odometer):
-    print("Rating of your car is 1")
-if o >= int(odometer) or int(odometer) < o:
-    print("Rating of your car is 2")
-if p >= int(odometer) or int(odometer) < p:
-    print("Rating of your car is 3")
-if p <= int(odometer):
-    print("Rating of your car is 4")
+    x = int(x)
+except Exception as error:
+    print("Error - invalid data")
+if x < int(1000):
+    rating += 1
+elif 50000 < x < 100000:
+    rating += 1
 else:
-    print("End of program")"""
-
-x = int(input("Your car odometer info is: "))
-if x <= 1000:
-    rating += 1
-if x >= 1000 or x <= 50000:
-    rating += 1
-if x >= 50000 or x <= 100000:
     rating -= 1
-else:
     print("We will not buy your car")
 
 rating += 1

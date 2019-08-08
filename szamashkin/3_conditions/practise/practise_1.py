@@ -12,9 +12,9 @@ else:
 def enterage(age):
     if age <= 0:
         raise ValueError("you have not yet been born")
-    if age >= 100:
+    elif age >= 100:
         print("you are very old")
-    if age > 0 or age < 18:
+    elif age > 0 or age < 18:
         print("you are a minor")
     else:
         print("age is none, you are adult")
@@ -32,6 +32,6 @@ if b in phone_number:
 if c in phone_number:
     print("Your phone number belongs to Kyivstar")
 else:
-    if a or b or c not in phone_number:
+    if a not in phone_number or b not in phone_number or c not in phone_number:
          print("You are not in our team")
 print(first_name, last_name, email, enterage, phone_number)
