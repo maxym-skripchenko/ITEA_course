@@ -12,8 +12,8 @@ ph_num_input = input('Phone number : ')
 ph_num_input = str(ph_num_input)
 
 #проверяем имена
-if name_input and fam_input in string.ascii_letters:
-    name_input and fam_input is True
+if name_input in string.ascii_letters and fam_input in string.ascii_letters:
+    name_input is True and fam_input is True
     print(f'Your name: {name_input}, {fam_input}')
 else: print('No name')
 
@@ -31,8 +31,8 @@ print(f'Your phone number belongs to {operator}')
 #меняем тип данных для возраста и вызываем ошибку
 try :
   age_input = str(age_input)
-except ValueError:
-    print('somthing broken: \n', ValueError)
+except ValueError as error:
+    print('somthing broken: \n', error)
     age_input = 0
 else: print(f'Your age : {age_input}')
 
