@@ -36,7 +36,7 @@ else: print(f'My favourite car : {fav_br}, {fav_mod}, {fav_col}')
 #изменение типа года, ошибка и вывод года, меншего на 1
 try:
   int(year)
-except ValueError: print('error')
+except ValueError as error1: print(error)
 else: print(f'Year : {year}')
 finally: res = int(year) - 1
 print(f'Correct year :{res}')
@@ -44,7 +44,7 @@ print(f'Correct year :{res}')
 #изменение типа и вывод +0,1 к значению
 try:
     float(eng_vol)
-except ValueError: print('error')
+except ValueError as error2: print(error2)
 else: eng_vol_new = int(eng_vol) + 0.1
 print(f'Correct engineer volume: {eng_vol_new}')
 
