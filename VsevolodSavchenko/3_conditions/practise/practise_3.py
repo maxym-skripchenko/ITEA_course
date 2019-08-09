@@ -34,9 +34,9 @@ finally:
         print("Your phone number belongs to MTS")
 ###3rd task
 try:
-    print(int(age))
-except ValueError:
-    print("None")
+    age = int(age)
+except ValueError as err:
+    print(err)
 ###5th task
 if age < age_majority:
     print("minor")
