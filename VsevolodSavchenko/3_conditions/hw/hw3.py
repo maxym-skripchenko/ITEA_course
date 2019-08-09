@@ -53,9 +53,9 @@ num = input("Write your card number :")
 cvv = input("Your CVV :")
 exp = input("expiration date (in format mm/yy)")
 ###
-d = len(num)
+#d = len(num)
 print(len(num))
-if d == 16:
+if len(num) == 16:
     num = True
 else:
     exit(1)
