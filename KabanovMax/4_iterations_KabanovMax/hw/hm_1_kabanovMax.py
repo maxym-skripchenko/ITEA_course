@@ -12,10 +12,11 @@ number_of_digits = [d for d in input_text if d.isdigit()]
 number_of_letters = [l for l in input_text if l.isalpha()]
 
 # Output string and quantity
-print(f"The number of digits: {number_of_digits}")
-print(len(number_of_digits))
-print(f"The number of letters: {number_of_letters}")
-print(len(number_of_letters))
+digit_numbers = len(number_of_digits)
+letter_numbers = len(number_of_letters)
+
+print(f"The number of digits: {digit_numbers}")
+print(f"The number of letters: {letter_numbers}")
 
 '''
 End of Homework #1
