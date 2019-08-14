@@ -1,0 +1,11 @@
+def vowel_counter(element):
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    if element not in vowels:
+        return False
+    else:
+        return True
+
+A = input('Enter the letter: ' )
+
+print(vowel_counter(A))
+
