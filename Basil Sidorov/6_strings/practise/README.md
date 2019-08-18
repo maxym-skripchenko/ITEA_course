@@ -19,16 +19,3 @@ returns True if they have at least one member in common,
 False otherwise. You may use your `is_member()` function, 
 or the in operator, but for the sake of the exercise, 
 you should (also) write it using two nested for-loops.
-
-    `string = AV is largest Analytics community of India`
-4. Return first word from string.
-result: `AV`
-
-5. Return last word from string.
-result: `India`
-
-6. Get two symbols of each word in string
-result: `['AV', 'is', 'la', 'An', 'co', 'of', 'In']`
-
-    `string = 'Amit 34-3456 12-05-2007, XYZ 56-4532 11-11-2011, ABC 67-8945 12-01-2009'`
-7. Get date from string

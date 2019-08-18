@@ -1,5 +1,7 @@
 .idea/
 .pytest_cache
 env/
+venv/
 *.pyc
-venv/*
+*.DC_Store
+
