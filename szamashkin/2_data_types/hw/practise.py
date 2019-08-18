@@ -20,16 +20,9 @@ variable = str(price + str(10))
 phone_number = input("Your phone_number is: ")
 variable = str(price + str(10))
 # added user phone number
-print("price")
-
-
-
-
-
-
-
-
-
-
-
-
+final_price = 12070
+# information about price
+result = ((final_price*10)/100)
+print(int(result))
+#math result
+print("Your car is:", brand, model, color, year, engine_volume, odometer)
