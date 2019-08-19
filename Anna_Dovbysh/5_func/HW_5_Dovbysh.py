@@ -3,9 +3,7 @@ def my_max_in_list(my_list):
     for i in my_list:
         if i > my_max:
             my_max = i
-    return print(my_max)
+    print(my_max)
+    return (my_max)
 
-my_max_in_list([1,5,10,6])
-
-
-
+my_max_in_list([1,10,3])

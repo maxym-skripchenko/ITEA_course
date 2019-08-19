@@ -4,8 +4,7 @@ def vowel_or_not(my_string):
         if vow in 'aeiou':
             vow = True
         else: vow = False
-        return print(vow)
-
+    print(vow)
+    return (vow)
 
 vowel_or_not(input('info - '))
-
