@@ -18,30 +18,21 @@ print(f'Your Phone Number {user_phone_number}')
 
 # Second task
 # Setting numbers for mobile operators
-kievstar_1 = "067"
-kievstar_2 = "096"
-kievstar_3 = "097"
-kievstar_4 = "098"
-kievstar_5 = "068"
-
-vodafone_1 = "050"
-vodafone_2 = "066"
-vodafone_3 = "095"
-vodafone_4 = "099"
-
-lifecell_1 = "063"
-lifecell_2 = "093"
-lifecell_3 = "073"
+phone_codes = {
+	"kievstar": ("067", "096", "097", "098", "068"),
+	"vodafone": ("050", "066", "095", "099"),
+	"lifecell": ("063", "093", "073")
+}
 
 # Reciving output for mobile operator
 
-if kievstar_1 in user_phone_number or kievstar_2 in user_phone_number or kievstar_3 in user_phone_number or kievstar_4 in user_phone_number or kievstar_5 in user_phone_number:
+if user_phone_number[:3] in phone_codes["kievstar"]:
 	print("Your mobile operator is Kievstar")
 
-elif vodafone_1 in user_phone_number or vodafone_2 in user_phone_number or vodafone_3 in user_phone_number or vodafone_4 in user_phone_number:
+elif user_phone_number[:3] in phone_codes["vodafone"]:
 	print("Your mobile operator is Vodafone\MTS")
 
-elif lifecell_1 in user_phone_number or lifecell_2 in user_phone_number or lifecell_3 in user_phone_number:
+elif user_phone_number[:3] in phone_codes["lifecell"]:
 	print("Your mobile operator is Life")
 
 # Done with second task
@@ -50,9 +41,19 @@ elif lifecell_1 in user_phone_number or lifecell_2 in user_phone_number or lifec
 
 # Age become int, if not - error exception
 try:
-    print(int(user_age))
-except ValueError:
-    print("Invalid age")
+    user_age_int = int(user_age)
+except ValueError as error:
+	print("Invalid age")
+while True:
+	try:
+		user_age = int(input("Age by number: "))
+	except ValueError as error:
+		print("Invalid age")
+		continue
+	else:
+		user_age_int = int(user_age)
+		print(user_age_int)
+		break
 # Done with third task
 
 # Fifth task
@@ -74,10 +75,13 @@ email_1 = "icloud.com"
 email_2 = "gmail.com"
 email_3 = "yandex.ru"
 
-if email_1 in user_email or email_2 in user_email or email_3 in user_email:
-	print(f"You are using this {user_email}")
-else:
-	print("You have unknown email=\ ")
+if email_1 in user_email:
+	print(f"You are using icloud")
+elif email_2 in user_email:
+	print(f"You are using gmail")
+elif email_3 in user_email:
+	print(f"You are using yandex")
+
 # Done with sixth task
 
 # Thank you for checking my practise, have a nice day)

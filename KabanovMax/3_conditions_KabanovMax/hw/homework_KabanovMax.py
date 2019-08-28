@@ -59,10 +59,16 @@ year_value = 3
 
 # Trying to catch error and subtracting year by 3
 try:
-	car_year_manufacturing = user_input_car_year_manufacturing - year_value
+	car_year_manufacturing = int(user_input_car_year_manufacturing) - year_value
 	print(car_year_manufacturing)
-except TypeError as error:
-	user_year_input = int(input("Please set year of manufacturing by number (2019 a. e.): "))
+except ValueError as error:
+	while True:
+		try:
+			user_year_input = int(input("Please set year of manufacturing by number (2019 a. e.): "))
+		except Exception as error:
+			continue
+		else:
+			break
 	print(user_year_input - year_value)
 
 '''
@@ -74,9 +80,19 @@ float_value = 0.1
 
 # Trying to catch error and adding 0.1 to engine volume as float
 try:
-	print(user_input_car_engine_volume + float_value)
-except TypeError as error:
-	print(float(user_input_car_engine_volume) + float_value)
+	car_new_float = float(user_input_car_engine_volume) + float_value
+except ValueError as error:
+	while True:
+		try:
+			user_input_car_engine_volume = (input("Please set engine volume by number (1.6 a. e.): "))
+			car_new_float = float(user_input_car_engine_volume) + float_value
+		except ValueError as error:
+			continue
+		else:
+			car_new_float = float(user_input_car_engine_volume) + float(float_value)
+			break
+
+print(car_new_float)
 
 '''
 Fifth step
@@ -117,7 +133,7 @@ input_credit_year = input("Type your expiration date in format mm\yy : ")
 
 credit_length = len(input_credit_number)
 
-if credit_length == 16:
+if len(input_credit_number) == 16:
 	credit_length = True
 else:
 	exit(1)
@@ -133,11 +149,7 @@ else:
 
 # Checking all info
 
-credit_length = len(input_credit_number)
-cvv_length = len(input_credit_cvv)
-year_length = len(input_credit_year)
-
-if credit_length != 16 and cvv_length != 3 and year_length != 5:
+if len(input_credit_number) != 16 and len(input_credit_cvv) != 3 and len(input_credit_year) != 5:
 	exit(1)
 else:
 	print("Everything fine")
