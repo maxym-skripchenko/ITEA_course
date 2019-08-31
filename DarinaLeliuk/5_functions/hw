@@ -1,0 +1,9 @@
+#Write a function max_in_list()
+#that takes a list of numbers and returns the largest one.
+
+def max_in_list(some_list):
+    currently_max = some_list[0]
+    for element in some_list:
+        if element > currently_max:
+            currently_max = element
+    return currently_max

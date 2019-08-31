@@ -1,0 +1,13 @@
+def max(a, b):
+    if a > b:
+        return a
+    elif b > a:
+        return b
+    else:
+        return None
+
+A = input('Enter the first number: ' )
+
+B = input('Enter the second number: ' )
+
+print(str(max(A, B)) + ' is larger')
