@@ -1,4 +1,22 @@
 
+# len()
+
+# exit(0)
+
+# True or True # True
+# False or True # True
+# True or False # True
+# False or False # False
+
+# True and True # True
+# False and True # False
+# True and False # False
+# False and False # False
+#
+
+# my_string = "abcd"
+# print(my_string)
+
 my_max = "Max"
 my_new_max = "Max"
 
