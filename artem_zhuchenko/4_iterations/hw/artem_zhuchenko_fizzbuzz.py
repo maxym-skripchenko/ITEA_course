@@ -7,6 +7,7 @@ boring_numbers = tuple(range(1, 51))               #Setting tuple with numbers r
 
 print(boring_numbers)
 
+
 for element in boring_numbers:
     # Avoid printing "Fizz" to the numbers where it should be "FizzBuzz"!
     if element % 3 == 0 and element % 5 != 0:
