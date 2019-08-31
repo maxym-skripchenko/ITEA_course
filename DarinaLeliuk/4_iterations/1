@@ -1,0 +1,9 @@
+number=0
+while number<6:
+    if number==3:
+        number += 1
+        continue
+    else:
+        print(number)
+        number +=1
+
