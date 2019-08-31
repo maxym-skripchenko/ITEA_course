@@ -1,9 +1,9 @@
-import unittest
+from hw.home_work_1 import my_max_number
 
 
 def test_home_work_1():
     assert my_max_number([1, 2, 3, 4]) == 4, "Should be 4"
-    assert my_max_number([1, 3, 6, 9) == 9, "Should be 9"
+    assert my_max_number([1, 3, 6, 9]) == 9, "Should be 9"
     assert my_max_number([-10, 0, 10, 20]) == 20, "Should be 100"
     assert my_max_number([-100, -10, 0]) == 0, "Should be 0"
 
