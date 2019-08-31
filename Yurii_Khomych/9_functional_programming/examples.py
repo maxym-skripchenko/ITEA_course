@@ -256,3 +256,8 @@ import time
 #
 # say_whee()
 # say_whee_2()
+
+for i in ():
+    print(i)
+else:
+    print("None")
