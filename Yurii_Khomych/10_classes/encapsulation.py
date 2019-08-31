@@ -12,13 +12,13 @@ class Animals:
 
 
 class Cat(Animals):
-    __mouses = 0
+    __mice = 0
 
     def speak(self):
         print("Meow!")
 
     def __catch_mouse(self):
-        self.__mouses += 1
+        self.__mice += 1
         print(f"Wow! {self.name} catch mouse")
 
 
@@ -27,10 +27,16 @@ class Dog(Animals):
         print("Woof!")
 
 
+class SuperCat(Cat):
+    pass
+
 murka = Cat(name="Murka", age=1)
 sharik = Dog(name="Sharik", age=2)
 # murka.__catch_mouse()
 murka._Cat__catch_mouse()
 sharik._catch_robber()
 murka._catch_robber()
+
+new_cat = SuperCat(name="Murka", age=1)
+pass
 

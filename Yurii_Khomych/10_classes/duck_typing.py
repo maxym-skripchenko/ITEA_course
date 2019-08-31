@@ -7,8 +7,8 @@ class Duck:
 
 
 class Person:
-    def quack(self):
-        print("A person ca imitate quacking")
+    def yell(self):
+        print("A person is yelling")
 
     def feathers(self):
         print("Man lifted feathers from the ground and shows him")
