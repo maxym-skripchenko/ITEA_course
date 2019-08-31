@@ -1,0 +1,9 @@
+def length(string):
+    count = 0
+    for element in string:
+        count += 1
+    return count
+
+A = input('Enter the text: ' )
+
+print(str(length(A)) + ' is length')
