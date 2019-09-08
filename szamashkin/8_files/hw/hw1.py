@@ -1,7 +1,7 @@
 words = []
 
 file_name = input("Please enter the file name: ")
-if not file_name < 1:
+if not file_name:
     file_name = 'unixdict.txt'
 
 with open(file_name, 'r') as file:
