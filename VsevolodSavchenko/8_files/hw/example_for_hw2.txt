@@ -1,0 +1,16 @@
+Use 4 spaces per indentation level.
+Continuation lines should align wrapped elements either vertically using
+Python's implicit line joining inside parentheses, brackets and braces,
+or using a hanging indent [7]. When using a hanging indent the following
+should be considered; there should be no arguments on the first line and
+further indentation should be used to clearly distinguish itself as a continuation line.
+When the conditional part of an if-statement is long enough to require
+that it be written across multiple lines, it's worth noting that the combination
+of a two character keyword (i.e. if), plus a single space, plus an opening
+ parenthesis creates a natural 4-space indent for the subsequent lines of
+ the multiline conditional. This can produce a visual conflict with the
+ indented suite of code nested inside the if-statement, which would also
+ naturally be indented to 4 spaces. This PEP takes no explicit position
+ on how (or whether) to further visually distinguish such conditional
+ lines from the nested suite inside the if-statement. Acceptable options
+ in this situation include, but are not limited to
