@@ -25,4 +25,9 @@ final_price = 12070
 result = ((final_price*10)/100)
 print(int(result))
 #math result
-print("Your car is:", brand, model, color, year, engine_volume, odometer)
+print(f"Your car brand is: {brand}, "
+      f"color is: {color}, "
+      f"model is: {model}, "
+      f"year is: {year}, "
+      f"engine volume is: {engine_volume}, "
+      f"odometer is: {odometer}")
