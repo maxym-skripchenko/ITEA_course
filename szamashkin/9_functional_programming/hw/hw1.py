@@ -6,6 +6,8 @@ def make_3sg_form(verb):
         return verb + "es"
     else:
         return verb + "s"
+
+
 print(make_3sg_form("try"))
 print(make_3sg_form("brush"))
 print(make_3sg_form("run"))
