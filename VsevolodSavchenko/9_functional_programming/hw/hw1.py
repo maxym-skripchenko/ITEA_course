@@ -1,6 +1,7 @@
 import re
+from hw3 import timer
 
-
+@timer
 def make_3sg_form(verb):
     es = ("o", "ch", "s", "sh", "x", "z")
     if verb.endswith("y"):

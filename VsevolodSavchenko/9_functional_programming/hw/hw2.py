@@ -1,3 +1,5 @@
+from hw3 import timer
+
 def is_vowel(char):
     vowels = ("a", "A", "e", "E", "i", "I", "o", "O", "u", "U", "y", "Y")
     if char not in vowels:
@@ -5,7 +7,7 @@ def is_vowel(char):
     else:
         return True
 
-
+@timer
 def make_ing_form(verb):
     if verb.endswith('ie'):
         return verb[:-2] + 'ying'
