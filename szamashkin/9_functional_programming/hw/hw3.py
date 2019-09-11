@@ -7,7 +7,7 @@ def timer(function):
         function()
         elapsed = timeit.default_timer() - start_time
         print('Function "{name}" took {time} seconds to complete.'.format(name=function.__name__, time=elapsed))
-    return new_function()
+    return new_function
 
 
 @timer
