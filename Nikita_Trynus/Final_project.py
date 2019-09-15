@@ -39,7 +39,7 @@ def buy_usd(update, context):
     data = json.loads(text)
     sellers = [o for o in data['organizations']
                if 'USD' in o['currencies']]
-    sellers.sort(key=lambda  o: float(o['currencies']['USD']['ask']))
+    sellers.sort(key=lambda o: float(o['currencies']['USD']['ask']))
     best = sellers[0]
     update.message.bot.send_message(
         update.message.chat_id,
