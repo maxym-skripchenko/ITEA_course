@@ -1,15 +1,15 @@
 import sys
-sys.path.append(r'/Users/nicktrynus/ITEA/ITEA_course/Nikita_Trynus/9_functional_programming/hw')
-import hw_func
+
+from hw.hw_func import make_3sg_form, make_ing_form, make_ing_form
 
 
 def test_1():
-    assert hw_func.make_3sg_form('try') == 'tries'
+    assert make_3sg_form('try') == 'tries'
 
 
 def test_2():
-    assert hw_func.make_ing_form('lie') == 'lying'
+    assert make_ing_form('lie') == 'lying'
 
 
 def test_3():
-    assert  hw_func.make_ing_form('run') == 'running'
+    assert  make_ing_form('run') == 'running'

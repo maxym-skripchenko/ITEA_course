@@ -1,8 +1,30 @@
+class Pet:
+
+    instances = []
+
+    def __init__(self,  name='animal', is_hungry=False):
+        self.is_hungry = is_hungry
+        self.name = name
+        self.instances
+
+    def eat(self):
+        self.is_hungry = True
+
+    def walk(self):
+        for i in self.instances:
+            i.walk = True
+            print(i)
+
+
+all_pets_on_the_street = Pet()
+
+
 class Dog:
     def __init__(self, name='Good boy', is_hungry=False, walk=False):
         self.is_hungry = is_hungry
         self.name = name
         self.walk = walk
+        all_pets_on_the_street.instances.append(self)
 
     def eat(self):
         self.is_hungry = True
@@ -16,6 +38,7 @@ class Cat:
         self.is_hungry = is_hungry
         self.name = name
         self.walk = walk
+        all_pets_on_the_street.instances.append(self)
 
     def eat(self):
         self.is_hungry = True
@@ -26,20 +49,14 @@ class Cat:
     def walk_bool(self):
         self.walk = True
 
+class Pet_init:
 
-# def walking(list_):
-#
-#     for i in list_:
-#         i.
+    instances = []
 
-
-class Pet:
-
-    instances = [Cat('John'), Dog('Valentine'), Cat(), Dog()]
-
-    def __init__(self, name='animal', is_hungry=False):
+    def __init__(self, cat, dog, name='animal', is_hungry=False):
         self.is_hungry = is_hungry
         self.name = name
+        self.instances.append(cat).append(dog)
 
     def eat(self):
         self.is_hungry = True
@@ -50,15 +67,9 @@ class Pet:
             print(i)
 
 
+if __name__ == '__main__':
 
-if __name__=='__main__':
-
-    # a = Dog()
-    # print(a)
-    # a.eat()
-    # # walking_pet = Pet().instances.walk
-    # print(Pet().walk())
-    a = Cat()
-    a.eat()
-    breakpoint()
-    print(a)
+    cat = Cat()
+    dog = Dog()
+    print(all_pets_on_the_street.instances)
+    print(Cat(), Dog(), " Yura postavb 100 pleeeeeaaaseeeee")

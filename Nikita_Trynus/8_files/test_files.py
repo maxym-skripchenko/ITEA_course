@@ -1,6 +1,6 @@
 import sys
-sys.path.append(r'/Users/nicktrynus/ITEA/ITEA_course/Nikita_Trynus/8_files/hw/')
-from files_hw import rec
+from hw.files_hw import rec
+
 
 
 def test_func1():
