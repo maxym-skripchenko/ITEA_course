@@ -24,8 +24,8 @@ def filter_long_words(strl, n):
 
     return b
 
+if __name__=='__main__':
 
-print(map_str_to_int(['1', '22','333']))
-print(find_longest_word(['1', '22','333']))
-
-print(filter_long_words(['1', '22','333'], 2))
+    print(map_str_to_int(['1', '22','333']))
+    print(find_longest_word(['1', '22','333']))
+    print(filter_long_words(['1', '22','333'], 2))
