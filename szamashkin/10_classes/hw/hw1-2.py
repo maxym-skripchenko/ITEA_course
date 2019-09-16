@@ -1,8 +1,5 @@
 class Pet:
 
-    dogs = []
-    animal = []
-
     def __init__(self, dogs):
         self.dogs = dogs
 
@@ -10,10 +7,8 @@ class Pet:
         return "I have {} dogs".format(len(self.dogs))
 
     def dogs_age(self):
-        global animal
         for animal in self.dogs:
             print("{} is {} years old".format(animal.name, animal.age))
-        print("and they are {}, of course".format(animal.species))
 
     def dogs_hunger(self):
 
