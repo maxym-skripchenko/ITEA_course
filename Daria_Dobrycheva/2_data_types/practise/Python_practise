@@ -1,0 +1,83 @@
+my_int = 1       # Create integer Variable
+print(my_int)    # Print integer Variable
+
+my_float = 33.3   # Create float Variable
+print(my_float)   # Print integer Variable
+
+my_str = 'Daria Dobrycheva' # Create string Variable
+print(my_str)        # Prints string
+print(my_str[0])     # Prints first character of the string
+print(my_str[2:10])  # Prints character from 3rd to 5th
+print(my_str[2:])    # Prints character from 3rd to the end
+print(my_str * 2)    # Prints my_str two times
+print (my_str + "TEST") # Prints concatenated string
+
+my_list = ['absd', 55, 2.5, 'Daria', 40.3]   # Create list Variable
+print(my_list)                               # Prints list
+print(my_list[0])                            # Prints first element of the list
+print(my_list[1:4])                          # Prints first character from 1st to 4rd don't including last one
+print(my_list[3:])                           # Prints first character from 1st to the end
+
+my_tupele = ('fkpt', 59, 2.0, 'Dobrycheva', 43.0)  # Create tupele Variable
+print(my_tupele)                               # Prints tupele
+print(my_tupele[0])                            # Prints tupele element of the list
+print(my_tupele[1:4])                          # Prints tupele character from 1st to 4rd don't including last one
+print(my_tupele[3:])                           # Prints tupele character from 1st to the end
+
+my_dict_favourite_sport = {'Ральф Вільямс' : 'футбол',
+                           'Майкл Тіппетт' : 'баскетбол',
+                           'Едвард Ельгар' : 'бейсбол',
+                           'Ребекка Кларк' : 'нетбол',
+                           'Етель Сміт' : 'бадмінтон',
+                           'Френк Брідж' : 'регбі'}       # Create dictionary
+
+print(my_dict_favourite_sport)                            # Prints all dictionary
+print(my_dict_favourite_sport['Ральф Вільямс'])           # Prints only one word from dictionary using key from it
+my_dict_favourite_sport['Ральф Вільямс'] = 'хокей нальоду' # Update definite word from dictionary using key from it
+print(my_dict_favourite_sport['Ральф Вільямс'])            # Prints only one word from dictionary using key from it
+print(my_dict_favourite_sport)                             # Prints all dictionary
+
+#my_inpyt = input('First Name : ')                       # Create input message
+#my_inpyt1 = input('Last Name : ')                       # Create input message
+#my_inpyt2 = input('Phone number : ')                    # Create input message
+#my_inpyt3 = input('Group : ')                           # Create input message
+#my_inpyt4 = input('a, b, c, d : ')                      # Create input message
+
+# Arithmetic Operators
+
+a = 5                    # Create var
+b = 2                    # Create var
+
+print(a + b)             # Addition a+b
+print(a - b)             # Subtraction a-b
+print(a * b)             # Multiplication a*b
+print(a / b)             # Division a/b
+print(a % b)             # Modulus a % b
+print(a ** b)            # Exponent
+
+
+# Assignment Operators
+
+c = a + b                # Create var
+print(c)
+
+c += a                 #  is equivalent to c = c + a
+print(c)
+
+c -= a                  #  is equivalent to c = c - a
+print(c)
+
+c *= a                 #  is equivalent to c = c * a
+print(c)
+
+c /= a                 #  is equivalent to c = c / a
+print(c)
+
+c %= a                 #  is equivalent to c = c % a
+print(c)
+
+c **= a                 #  is equivalent to c = c ** a
+print(c)
+
+c //= a                 #  is equivalent to c = c // a
+print(c)

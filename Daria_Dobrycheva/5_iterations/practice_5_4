@@ -1,0 +1,23 @@
+def sum(numbers):
+    total = 0
+    for i in numbers:
+        total += i
+    return total
+
+
+def multiply(numbers):
+    total = 1
+    for i in numbers:
+        total = total * i
+    return total
+
+print(sum((8, 2, 3, 0, 7)))
+
+print(multiply((8, 2, 3, 0, 7)))
+
+
+#A = input('Enter the numbers for sum: ' )
+#B = input('Enter the numbers for multiply: ' )
+
+#print(sum(A))
+#print(multiply(B))
